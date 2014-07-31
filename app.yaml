@@ -1,0 +1,19 @@
+application: hack-your-education
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: css
+
+- url: /resources
+  static_dir: resources
+
+- url: /.*
+  script: hack-your-education.application
+
+libraries:
+- name: jinja2
+  version: latest
