@@ -5,6 +5,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /sources
+  static_dir: sources
+
 - url: /.*
   script: hack-your-education.application
 
